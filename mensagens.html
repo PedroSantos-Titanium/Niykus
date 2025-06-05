@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mensagens pro mo</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <div class="header-flex">
+      <div class="logo-interativa" onclick="window.location.href='index.html'">
+        <img src="imagens/logo.png" alt="Logo Kuromi"/>
+      </div>
+      <h1>Deixe uma Mensagem</h1>
+    </div>
+    <p class="descricao">Escreva um recadinho para o seu amor 💜</p>
+  </header>
+  <main>
+    <div class="mensagens-container">
+      <form id="form-mensagem">
+        <textarea id="mensagem" rows="4" placeholder="Sua mensagem apaixonada..."></textarea>
+        <button type="submit">Enviar 💌</button>
+      </form>
+      <div id="mensagens-lista"></div>
+    </div>
+  </main>
+  <script src="mensagens.js"></script>
+</body>
+</html>

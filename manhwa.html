@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lágrimas Sobre Flores Murchas</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <div class="header-flex">
+      <div class="logo-interativa" onclick="window.location.href='index.html'">
+        <img src="imagens/logo.png" alt="Logo Kuromi"/>
+      </div>
+      <h1 id="manhwa-titulo"></h1>
+    </div>
+    <p class="descricao" id="manhwa-desc"></p>
+  </header>
+  <main>
+    <div class="capitulo-selector">
+      <label for="capitulo">Capítulo:</label>
+      <select id="capitulo"></select>
+    </div>
+    <div id="paginas-container" class="paginas-container"></div>
+    <button id="btn-topo" class="btn-topo" title="Voltar ao topo">↑ Topo</button>
+  </main>
+  <script src="manhwa.js"></script>
+</body>
+</html>

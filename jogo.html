@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vista a Kuromi!</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    .kuromi-jogo-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+    #kuromi-canvas {
+      background: #221b36;
+      border-radius: 18px;
+      box-shadow: 0 0 18px #a98eea55;
+      margin-bottom: 1.5em;
+      width: 240px;
+      height: 320px;
+      max-width: 90vw;
+      max-height: 70vw;
+      display: block;
+    }
+    .opcoes-roupas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+      justify-content: center;
+      margin-bottom: 1.5em;
+    }
+    .opcao-roupa {
+      background: #2e2546;
+      border-radius: 10px;
+      padding: 0.5em 1em;
+      color: #fff;
+      cursor: pointer;
+      border: 2px solid #a98eea;
+      transition: background 0.2s, transform 0.2s;
+      font-family: 'Quicksand', cursive;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+    .opcao-roupa.selected,
+    .opcao-roupa:hover {
+      background: #a98eea;
+      color: #2e2546;
+      transform: scale(1.07);
+      border-color: #fff;
+    }
+    @media (max-width: 700px) {
+      #kuromi-canvas {
+        width: 160px;
+        height: 210px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-flex">
+      <div class="logo-interativa" onclick="window.location.href='index.html'">
+        <img src="imagens/logo.png" alt="Logo Kuromi"/>
+      </div>
+      <h1>Vista a Kuromi!</h1>
+    </div>
+    <p class="descricao">Escolha roupinhas e acessórios para deixar a Kuromi do seu jeitinho!</p>
+  </header>
+  <main>
+    <div class="kuromi-jogo-container">
+      <canvas id="kuromi-canvas" width="240" height="320"></canvas>
+      <div class="opcoes-roupas" id="opcoes-roupas"></div>
+      <div class="opcoes-roupas" id="opcoes-acessorios"></div>
+    </div>
+  </main>
+  <footer class="rodape">
+    Feito com 💜 para minha princesa | Pelo seu namorado &copy; 2025
+  </footer>
+  <script src="jogo.js"></script>
+</body>
+</html>

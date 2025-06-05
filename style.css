@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Quicksand:wght@700&display=swap');
+
+body {
+  background: linear-gradient(135deg, #18141f 0%, #22182b 100%);
+  color: #e1d7ee;
+  font-family: 'Quicksand', Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.7;
+  margin: 0;
+  min-height: 100vh;
+}
+header {
+  background: #18141f;
+  border-bottom: 2px solid #2a1d3a;
+  border-radius: 0 0 32px 32px;
+  box-shadow: 0 4px 24px #1a102a33;
+  padding: 2.5em 0 1.5em 0;
+  margin-bottom: 2.5em;
+  position: relative;
+}
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5em;
+  margin-bottom: 0.5em;
+}
+.logo-interativa {
+  width: 72px;
+  height: 72px;
+  min-width: 72px;
+  min-height: 72px;
+  background: #22182b;
+  margin: 0;
+  box-shadow: 0 2px 12px #2a1d3a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid #2a1d3a;
+  transition: transform 0.5s cubic-bezier(.4,2,.6,.9), box-shadow 0.2s;
+}
+.logo-interativa:hover,
+.logo-interativa:focus,
+.logo-interativa:active {
+  transform: rotate(1turn) scale(1.06);
+  box-shadow: 0 4px 18px #a18fc9;
+  border-color: #a18fc9;
+}
+.logo-interativa img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.2rem;
+  color: #fff;
+  background: none;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 2px;
+  text-shadow: 0 6px 24px #2a1d3a44, 0 2px 8px #fff4, 0 1px 0 #0008;
+  font-weight: 900;
+  line-height: 1.1;
+  filter: drop-shadow(0 2px 12px #2a1d3a33);
+}
+.descricao {
+  color: #a18fc9;
+  font-size: 1.18rem;
+  margin-bottom: 2.5em;
+  font-family: 'Quicksand', Arial, sans-serif;
+  text-align: center;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.menu-manhwas h2 {
+  color: #a18fc9;
+  font-size: 1.5rem;
+  margin-bottom: 2em;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 2px;
+  text-align: center;
+  text-shadow: 0 2px 8px #2a1d3a22;
+  font-weight: 900;
+}
+.manhwa-lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2em 1.5em;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 2em auto;
+  padding: 0;
+}
+.manhwa-card {
+  background: linear-gradient(120deg, #18141f 70%, #2a1d3a 100%);
+  border-radius: 18px;
+  box-shadow: 0 4px 18px #1a102a33, 0 2px 8px #a18fc922;
+  padding: 1.2em 0.5em 1em 0.5em;
+  width: 160px;
+  max-width: 38vw;
+  min-width: 120px;
+  cursor: pointer;
+  transition: transform 0.18s, box-shadow 0.18s, border 0.18s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #2a1d3a;
+  position: relative;
+  overflow: hidden;
+  outline: none;
+  margin: 0;
+}
+.manhwa-card:focus,
+.manhwa-card:hover {
+  transform: translateY(-6px) scale(1.04) rotate(-1deg);
+  box-shadow: 0 8px 24px #a18fc955, 0 2px 8px #a18fc944;
+  border-color: #a18fc9;
+  z-index: 2;
+}
+.manhwa-card img {
+  width: 80px;
+  height: 115px;
+  border-radius: 10px;
+  margin-bottom: 0.7em;
+  border: 2px solid #a18fc9;
+  object-fit: cover;
+  box-shadow: 0 2px 8px #a18fc933;
+  background: #18141f;
+  transition: transform 0.14s, box-shadow 0.14s;
+}
+.manhwa-card:hover img,
+.manhwa-card:focus img {
+  transform: scale(1.03) rotate(-2deg);
+  box-shadow: 0 6px 14px #a18fc955;
+}
+.manhwa-card span {
+  color: #fff;
+  font-size: 0.98rem;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1px;
+  margin-bottom: 0.1em;
+  text-align: center;
+  font-weight: 900;
+  text-shadow: 0 2px 8px #2a1d3a22;
+  background: rgba(26,16,42,0.7);
+  padding: 0.2em 0.5em;
+  border-radius: 7px;
+  border: 1.5px solid #a18fc9;
+}
+.manhwa-card .manhwa-desc {
+  display: none;
+}
+.botoes-compactos {
+  display: flex;
+  justify-content: center;
+  gap: 0.7em;
+  margin-top: 1.2em;
+  margin-bottom: 1.5em;
+}
+.btn-jogo, .btn-mensagens {
+  background: linear-gradient(90deg, #2a1d3a 0%, #a18fc9 100%);
+  color: #fff;
+  border: none;
+  border-radius: 18px;
+  padding: 0.5em 1.1em;
+  font-size: 0.98rem;
+  margin: 0;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #1a102a22;
+  transition: background 0.18s, transform 0.18s, color 0.18s;
+  font-family: 'Quicksand', Arial, sans-serif;
+  font-weight: 900;
+  letter-spacing: 1px;
+  min-width: 0;
+}
+.btn-jogo:hover, .btn-mensagens:hover {
+  background: linear-gradient(90deg, #a18fc9 0%, #2a1d3a 100%);
+  color: #a18fc9;
+  transform: scale(1.06);
+}
+.avatar-flutuante {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  background: #22182b;
+  border-radius: 32px;
+  box-shadow: 0 2px 12px #2a1d3a;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0.7em 1.2em;
+  z-index: 1000;
+  opacity: 0.96;
+  border: 2px solid #2a1d3a;
+  font-family: 'Quicksand', Arial, sans-serif;
+  font-size: 1.12rem;
+  color: #a18fc9;
+  font-weight: 900;
+}
+.capitulo-selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  margin: 2.5em 0 2.5em 0;
+  background: #18141f;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px #2a1d3a22;
+  padding: 1.2em 2.2em;
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #2a1d3a;
+  margin-bottom: 2.5em;
+  margin-top: 2.5em;
+}
+.capitulo-selector label {
+  color: #a18fc9;
+  font-size: 1.13rem;
+  font-family: 'Playfair Display', serif;
+  margin-right: 0.7em;
+  letter-spacing: 0.7px;
+  font-weight: 900;
+}
+.capitulo-selector select {
+  background: #22182b;
+  color: #a18fc9;
+  border: 2px solid #a18fc9;
+  border-radius: 12px;
+  padding: 0.7em 1.5em;
+  font-size: 1.13rem;
+  font-family: 'Quicksand', cursive;
+  box-shadow: 0 1px 8px #2a1d3a22;
+  outline: none;
+  transition: border 0.18s, box-shadow 0.18s;
+  cursor: pointer;
+  font-weight: 900;
+}
+.capitulo-selector select:focus {
+  border: 2px solid #e573b7;
+  box-shadow: 0 2px 12px #e573b744;
+}
+.mensagens-container {
+  background: #18141f;
+  border-radius: 32px;
+  box-shadow: 0 8px 24px #2a1d3a22, 0 2px 8px #a18fc944;
+  max-width: 520px;
+  margin: 2.5em auto 0 auto;
+  padding: 2.5em 2em 2em 2em;
+  border: 2.5px solid #a18fc9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#form-mensagem textarea {
+  width: 100%;
+  border-radius: 18px;
+  border: 2px solid #a18fc9;
+  background: #22182b;
+  color: #e573b7;
+  font-size: 1.13rem;
+  font-family: 'Quicksand', Arial, sans-serif;
+  padding: 1.2em;
+  margin-bottom: 1.2em;
+  resize: vertical;
+  min-height: 90px;
+  box-shadow: 0 2px 8px #2a1d3a22;
+  transition: border 0.18s, box-shadow 0.18s;
+  font-weight: 900;
+}
+#form-mensagem textarea:focus {
+  border: 2px solid #e573b7;
+  box-shadow: 0 2px 12px #e573b744;
+}
+#form-mensagem button {
+  background: linear-gradient(90deg, #a18fc9 0%, #e573b7 100%);
+  color: #18141f;
+  border: none;
+  border-radius: 22px;
+  padding: 0.8em 2.2em;
+  font-size: 1.13rem;
+  font-family: 'Quicksand', Arial, sans-serif;
+  font-weight: 900;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #2a1d3a22;
+  transition: background 0.18s, color 0.18s, transform 0.18s;
+}
+#form-mensagem button:hover {
+  background: linear-gradient(90deg, #e573b7 0%, #a18fc9 100%);
+  color: #fff;
+  transform: scale(1.05);
+}
+#mensagens-lista {
+  width: 100%;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+.msg-item {
+  background: linear-gradient(90deg, #2a1d3a22 0%, #a18fc922 100%);
+  border-radius: 18px;
+  padding: 1.2em 1.5em;
+  color: #e573b7;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.18rem;
+  box-shadow: 0 2px 8px #2a1d3a22;
+  border: 1.5px solid #a18fc9;
+  position: relative;
+  font-weight: 900;
+}
+.msg-item:before {
+  content: "💜";
+  position: absolute;
+  left: -1.5em;
+  top: 0.8em;
+  font-size: 1.3em;
+  opacity: 0.7;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px);}
+  to { opacity: 0.96; transform: translateY(0);}
+}
+.btn-topo {
+  position: fixed;
+  right: 24px;
+  bottom: 32px;
+  z-index: 999;
+  background: linear-gradient(90deg, #2a1d3a 0%, #a18fc9 100%);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 1.6rem;
+  font-weight: 900;
+  box-shadow: 0 2px 12px #1a102a33;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.18s, transform 0.18s;
+}
+.btn-topo:hover {
+  background: linear-gradient(90deg, #a18fc9 0%, #2a1d3a 100%);
+  color: #a18fc9;
+  transform: scale(1.08);
+}
+.rodape {
+  width: 100%;
+  background: #18141f;
+  color: #a18fc9;
+  text-align: center;
+  padding: 1.2em 0 1em 0;
+  font-size: 0.98rem;
+  font-family: 'Quicksand', Arial, sans-serif;
+  border-top: 1.5px solid #2a1d3a;
+  margin-top: 2em;
+  letter-spacing: 1px;
+}
+.paginas-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2em;
+  margin-bottom: 2em;
+}
+
+.paginas-container img,
+.pagina-manhwa {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 10px;
+  background: #221b36;
+  box-shadow: 0 2px 8px #2e254622;
+}
+@media (max-width: 900px) {
+  .manhwa-lista {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.2em 0.5em;
+    max-width: 98vw;
+  }
+  .manhwa-card {
+    min-width: 90px;
+    max-width: 38vw;
+    padding: 1em 0.3em 0.7em 0.3em;
+  }
+  .mensagens-container {
+    max-width: 98vw;
+    padding: 1.5em 0.5em 1.5em 0.5em;
+  }
+}
+@media (max-width: 700px) {
+  .header-flex {
+    flex-direction: column;
+    gap: 0.7em;
+  }
+  .logo-interativa {
+    width: 54px; height: 54px; min-width: 54px; min-height: 54px;
+  }
+  .logo-interativa img {
+    width: 40px; height: 40px;
+  }
+  .manhwa-card {
+    min-width: 70px;
+    max-width: 44vw;
+    padding: 0.7em 0.2em 0.5em 0.2em;
+  }
+  .manhwa-card img {
+    width: 55px;
+    height: 80px;
+  }
+  .manhwa-lista {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em 0.3em;
+    max-width: 100vw;
+  }
+  .capitulo-selector {
+    max-width: 98vw;
+    padding: 1em 0.5em;
+  }
+  .btn-topo {
+    right: 10px;
+    bottom: 18px;
+    width: 38px;
+    height: 38px;
+    font-size: 1.2rem;
+  }
+  .botoes-compactos {
+    flex-direction: column;
+    gap: 0.5em;
+    margin-top: 0.7em;
+    margin-bottom: 1em;
+  }
+  .rodape {
+    font-size: 0.88rem;
+    padding: 1em 0 0.7em 0;
+  }
+}

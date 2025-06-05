@@ -1,0 +1,33 @@
+#kuromi-jogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+}
+#kuromi-canvas {
+  background: #2d0036;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #d500f9;
+  margin-bottom: 1.5em;
+}
+.opcoes-roupas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+}
+.opcao-roupa {
+  background: #3a004d;
+  border-radius: 15px;
+  padding: 0.5em 1em;
+  color: #fff;
+  cursor: pointer;
+  border: 2px solid #d500f9;
+  transition: background 0.2s, transform 0.2s;
+  font-family: 'Quicksand', cursive;
+}
+.opcao-roupa:hover {
+  background: #ff69b4;
+  color: #fff;
+  transform: scale(1.08);
+}

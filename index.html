@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Niykus</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="avatar-flutuante" class="avatar-flutuante">
+    <img src="" alt="" />
+    <span>Oi momo, boa leitura viu? eu amo muito você e não se esqueça de tomar água 🤍</span>
+  </div>
+  <header>
+    <div class="header-flex">
+      <div class="logo-interativa" onclick="window.location.href='index.html'">
+        <img src="imagens/logo.png" alt="Logo Kuromi"/>
+      </div>
+      <h1>🎀 𝑵𝒊𝒚𝒌𝒖𝒔 🌸</h1>
+    </div>
+    <p class="descricao">𝗦𝗲𝘂 𝗟𝗲𝗶𝘁𝗼𝗿 𝗣𝗲𝘀𝘀𝗼𝗮𝗹 𝗱𝗲 𝗠𝗮𝗻𝗵𝘄𝗮𝘀!</p>
+  </header>
+  <main>
+    <div class="botoes-compactos">
+      <button class="btn-jogo" onclick="window.location.href='jogo.html'">Joguinho da Kuromi</button>
+      <button class="btn-mensagens" onclick="window.location.href='mensagens.html'">Deixe uma mensagem</button>
+    </div>
+    <section class="menu-manhwas">
+      <h2>Escolha seu Manhwa</h2>
+      <div class="manhwa-lista" id="manhwa-lista">
+        <!-- Lista de manhwas será preenchida via JS -->
+        <div class="manhwa-card" onclick="window.open('pdfs/desenfreados.pdf', '_blank')">
+          <img src="imagens/capas/desenfreados-capa.jpg" alt="Desenfreados"/>
+          <span>Desenfreados</span>
+        </div>
+        <div class="manhwa-card" onclick="window.open('pdfs/desenfreados2.pdf', '_blank')">
+          <img src="imagens/capas/desenfreados2-capa.jpg" alt="Desenfreados 2"/>
+          <span>Desenfreados 2</span>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="rodape">
+    Feito com 💜 para minha princesa | Pelo seu namorado &copy; 2025
+  </footer>
+  <audio id="musica-menu" src="audio/Compass.mp3" autoplay loop></audio>
+  <script src="main.js"></script>
+</body>
+</html>
