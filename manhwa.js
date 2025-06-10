@@ -26,7 +26,7 @@ document.getElementById('manhwa-desc').innerText = manhwa.desc;
 
 // Preencher seletor de capítulos (do maior para o menor)
 const capituloSel = document.getElementById('capitulo');
-for (let i = 55; i >= 1; i--) {
+for (let i = 56; i >= 1; i--) {
   const opt = document.createElement('option');
   opt.value = i;
   opt.innerText = `Capítulo ${i}`;
