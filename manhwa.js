@@ -45,7 +45,7 @@ function carregarPaginas() {
   const container = document.getElementById('paginas-container');
   container.innerHTML = '';
   // Tenta carregar até 55 páginas por capítulo
-  for (let p = 1; p <= 55; p++) {
+  for (let p = 1; p <= 56; p++) {
     const imgPath = `manhwas/${manhwa.pasta}/capitulo${cap}_${p}.jpg`;
     const img = document.createElement('img');
     img.src = imgPath;
