@@ -26,7 +26,7 @@ document.getElementById('manhwa-desc').innerText = manhwa.desc;
 
 // Preencher seletor de capítulos (do maior para o menor)
 const capituloSel = document.getElementById('capitulo');
-for (let i = 56; i >= 1; i--) {
+for (let i = 57; i >= 1; i--) {
   const opt = document.createElement('option');
   opt.value = i;
   opt.innerText = `Capítulo ${i}`;
@@ -45,7 +45,7 @@ function carregarPaginas() {
   const container = document.getElementById('paginas-container');
   container.innerHTML = '';
   // Tenta carregar até 55 páginas por capítulo
-  for (let p = 1; p <= 56; p++) {
+  for (let p = 1; p <= 57; p++) {
     const imgPath = `manhwas/${manhwa.pasta}/capitulo${cap}_${p}.jpg`;
     const img = document.createElement('img');
     img.src = imgPath;
