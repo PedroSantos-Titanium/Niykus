@@ -13,8 +13,12 @@ const manhwas = [
     nome: "Selfish Romance",
     desc: "",
     pasta: "selfish"
+  },
+  {
+    nome: "Match Made in Heaven by Chance",
+    desc: "",
+    pasta: "mmihbc"
   }
-  // ...adicione mais manhwas aqui...
 ];
 
 const urlParams = new URLSearchParams(window.location.search);
