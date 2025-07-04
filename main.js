@@ -11,6 +11,10 @@ const manhwas = [
   {
     nome: "Selfish Romance",
     capa: "imagens/capas/manhwa3.jpeg",
+  },
+  {
+    nome: "Match Made in Heaven by Chance",
+    capa: "imagens/capas/manhwa4.jpg",
   }
   // ...adicione mais manhwas aqui...
 ];
